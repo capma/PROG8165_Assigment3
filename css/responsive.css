@@ -1,0 +1,35 @@
+.register, .detailedTransaction, .login{
+	padding: 0  20px;
+}
+@media only screen and (max-width: 767px){
+	.login-container, .register-container{
+		max-width: 100%;
+	}
+	.register h1, .detailedTransaction h1, .login h1 {
+	    font-size: 1.6em;
+	}
+}
+@media only screen and (max-width: 480px){
+	.detailedTransactionContainer > div > div {
+	    display: block;
+	    width: 100%;
+	    text-indent: 0;
+	    text-align: center;
+	}
+	.btnCancel{
+		text-align: center;
+	}
+	#transactionTable th, #transactionTable td {
+	    font-size: 12px;
+	}
+	#transactionInput {
+	    width: 82%;
+	}
+	.dashboard-container .btn {
+	    float:  none;
+	    margin-bottom: 20px;
+	}
+	.table-responsive {
+	    overflow: auto;
+	}
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    </head>
+    <body>
+        <div id="htmlBody" class="bodyBackground fullwidth">
+            <div class="register">
+                <h1>Register Form</h1>
+                <div class="register-container">
+                    <h2>Sign Up</h2>
+                    <form onsubmit="return false">
+                        <input class="email" placeholder="Email"  name="email" id="email" type="email">
+                        <input class="name" placeholder="Username"  id="uname" name="uname" type="text">
+                        <input class="email" placeholder="First Name" id="fname" name="fname" type="text">
+                        <input class="name" placeholder="Last Name" id="lname" name="lname"  type="text">
+                        <input class="password" placeholder="Password" id="password" required="" type="password">
+                        <div class="clear"></div>
+                        <input class="btn" value="REGISTER" onclick="return validateregister();" type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/register.js"></script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detailed Transaction</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    </head>
+    <body>
+        <div id="htmlBody" class="bodyBackground fullwidth">
+            <div class="detailedTransaction">
+                <h1>Transaction Form</h1>
+                <div class="detailedTransactionContainer">
+                    <h2>Detailed Transaction</h2>
+                    <div class="transactionNameContainer">
+                        <div class="transactionLabel">Name : </div>
+                        <div class="transactionText" id="transactionName">Transaction Name</div>
+                    </div>
+                    <div class="transactionCategoryContainer">
+                        <div class="transactionLabel">Date & Time : </div>
+                        <div class="transactionText" id="transactionDate">Transaction Date & Time</div>
+                    </div>
+                    <div class="transactionCategoryContainer">
+                        <div class="transactionLabel">Location : </div>
+                        <div class="transactionText" id="transactionLocation">Transaction Description (Place)</div>
+                    </div>
+                    <div class="transactionDateTimeContainer">
+                        <div class="transactionLabel">Value : </div>
+                        <div class="transactionText" id="transactionValue">Transaction Value</div>
+                    </div>
+                    <div class="btnCancel">
+                        <!-- <form>
+                            <input class="btn" value="CANCEL" type="submit" onclick="window.history.back()">
+                        </form> -->
+                        <input class="btn" value="CANCEL" type="submit" onclick="goBack()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/detailed_transaction.js"></script>
+        <script type="text/javascript" src="js/transactions.js"></script>
+    </body>
+</html>

@@ -1,0 +1,225 @@
+/* 
+    Created on : Feb 14, 2018, 2:58:05 PM
+    Author     : Tapmeet, Tripham and Marcus
+*/
+
+@import "fonts/fonts.css";
+
+/*Basic Template for viewport*/
+html,body{
+    padding: 0;
+    margin: 0;
+}
+.fullwidth{
+    float:left;
+    width: 100%;
+}
+.halfwidth{
+    float:left;
+    width: 50%;
+}
+.clear{
+    clear: both;
+}
+body{
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 14px;
+}
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.btn {
+    padding: 8px 20px;
+    font-size: 12px;
+}
+
+/*Login page*/
+.bodyBackground {
+    background: url("img/bg.jpg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    overflow: auto;
+}
+
+#htmlBody{
+    position: relative;
+}
+
+.login h1, .register h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 100px 0 0;
+    margin: 0;
+}
+
+.login-container, .register-container{
+    width: 436px;
+    max-width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: rgba(110, 11, 42, 0.39);
+    border: 2px solid black;
+    border-bottom-width: 2px;
+    border-bottom-style: ridge;
+    border-bottom-color: black;
+    border-radius: 5px;
+    -moz-box-shadow: 0 -5px 9px 1px rgba(16, 16, 16, 0.50);
+    -webkit-box-shadow: 0 -5px 9px 1px rgba(16, 16, 16, 0.50);
+    box-shadow: 0 -5px 9px 1px rgba(16, 16, 16, 0.50);
+    border-bottom: 2px solid black;
+    padding: 30px 0;
+}
+
+.login-container h2, .register-container h2 {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.name, .password {
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    text-indent: 10px;
+    margin: 0 0 20px;
+}
+
+.login li, .register li {
+    margin: 20px 0;
+}
+
+.login label, .register label {
+    color: #fff;
+}
+
+/*Register page*/
+.email {
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    text-indent: 10px;
+    margin: 0 0 20px;
+}
+
+/* 2018.02.15 TRI-PQ ADD START*/
+.detailedTransactionContainer {
+     width: 436px;
+    max-width: 100%;
+    margin: 50px auto;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 0 0;
+
+    background-color: rgba(110, 11, 42, 0.39);
+    border: 2px solid black;
+    border-radius: 5px;
+    -moz-box-shadow: 0 -5px 9px 1px rgba(16, 16, 16, 0.50);
+    -webkit-box-shadow: 0 -5px 9px 1px rgba(16, 16, 16, 0.50);
+    box-shadow: 0 -5px 9px 1px rgba(16, 16, 16, 0.50);
+    border-bottom: 2px solid #000;
+    padding-bottom: 1%;
+}
+
+#transactionTable td a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.detailedTransaction h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 100px 0 0;
+    margin: 0;
+}
+
+.detailedTransactionContainer h2 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 0 0;
+}
+
+.transactionNameContainer, .transactionCategoryContainer, .transactionDateTimeContainer {
+    margin: 0 1%;
+    padding: 2% 5%;
+    width: 88%;
+}
+
+.transactionLabel {
+    text-indent: 0px;
+    color: #fff;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.transactionText {
+    color: greenyellow;
+    text-indent: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.btnCancel {
+    text-align: right;
+    padding-right: 30px;
+    margin: 20px 0;
+}
+/* 2018.02.15 TRI-PQ ADD END */
+
+/*Dasboard Page Css*/
+.dashboard-container{
+    width: 80%;
+    margin: 50px auto;
+    text-align: left;
+    background-color: rgba(110, 11, 42, 0.39);
+    border: 2px solid black;
+    border-radius: 5px;
+    -moz-box-shadow: 0 -5px 9px 1px rgba(16, 16, 16, 0.50);
+    -webkit-box-shadow: 0 -5px 9px 1px rgba(16, 16, 16, 0.50);
+    box-shadow: 0 -5px 9px 1px rgba(16, 16, 16, 0.50);
+    border-bottom: 2px solid black;
+    padding: 30px;
+    color: #fff;
+}
+
+#transactionInput {
+    background-image: url('img/icon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#transactionTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+#transactionTable th, #transactionTable td {
+    text-align: left;
+    padding: 12px;
+}
+
+#transactionTable tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#transactionTable tr.header, #transactionTable tr:hover {
+    background-color: #000;
+}
+
+.dashboard-container .btn {
+    float: right;
+}
